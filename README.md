@@ -1,5 +1,5 @@
 # imdb-watchlist-random
-Select a random movie/show from your IMDb watchlist.
+Get random movie/show suggestions from your IMDb watchlist.
 
 In order to import your own IMDb watchlist, just overwrite the WATCHLIST.csv file.
 The selector uses my watchlist by default.
