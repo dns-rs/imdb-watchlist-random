@@ -8,8 +8,12 @@ mega_dict = []
 op_sys = os.name
 line = "-----------------------------"
 
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_name = 'WATCHLIST.csv'
+file_path = os.path.join(script_dir, file_name)
+
 # Opens the watchlist csv file and reads it's content
-with open('WATCHLIST.csv', newline='', encoding='ISO-8859-1') as f:
+with open(file_path, newline='', encoding='ISO-8859-1') as f:
     reader = csv.reader(f, quotechar='"', delimiter=',')
     # We will store the header and use it's values as the keys to our object
     # which will contain all the details of a given movie.
